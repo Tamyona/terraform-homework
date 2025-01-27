@@ -6,6 +6,6 @@ resource "aws_instance" "homework4" {
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
 
   tags = {
-    Name = "HelloWorld"
+    Name = var.instance_name
   }
 }
